@@ -10,6 +10,11 @@
 
 ```text
 .
+├── .gitattributes
+├── .gitignore
+├── CMakeLists.txt
+├── README.md
+├── WINDOWS_SETUP.md
 ├── config.toml
 ├── test_repo.txt
 ├── include/depviz.hpp
@@ -19,6 +24,8 @@
 │   ├── repository.cpp
 │   └── graph.cpp
 ├── tests/test_main.cpp
+├── run.sh
+├── run_windows.sh
 ├── examples/
 │   ├── config_A.toml
 │   ├── config_X.toml
@@ -181,7 +188,7 @@ ctest --test-dir build --output-on-failure
 
 ## 8. История этапов Git
 
-История содержит отдельные Conventional Commits по каждому из 5 этапов и также он содержит дополнительные коммиты.
+Все коммиты оформлены по формату Conventional Commits. Пять основных этапов разработки выделены отдельно; дополнительные коммиты описывают изменения документации, настройки Windows и оформление примеров.
 
 1. `feat(config): add TOML-based CLI configuration`
 2. `feat(apk): parse Alpine APKINDEX dependencies`
@@ -189,15 +196,11 @@ ctest --test-dir build --output-on-failure
 4. `feat(graph): add reverse dependency traversal`
 5. `feat(output): generate PlantUML, SVG and ASCII tree`
 
-Порядок публикации репозитория приведён в `GIT_SETUP.md`.
-
 ## 9. Проверка простоты и ограничения
 
 Краткое описание исходных файлов и ограничений реализации приведено в
-[`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md). Критерии структуры и проверки
-перед публикацией перечислены в [`REPOSITORY_CHECKLIST.md`](REPOSITORY_CHECKLIST.md).
+[`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md).
 
-## 10. Публикация в GitHub
+## 10. Репозиторий GitHub
 
-Порядок настройки автора, создания удалённого репозитория и отправки истории
-описан в [`GIT_SETUP.md`](GIT_SETUP.md).
+Исходный код проекта размещён в [репозитории Sarkisyan-IKBO-31-25](https://github.com/amkana568-sys/Sarkisyan-IKBO-31-25).
